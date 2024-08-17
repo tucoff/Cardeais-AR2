@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QCARConfig>
+  <Tracking>
+    <ImageTarget name="targetboi" size="210.000000 300.000000" />
+    <ImageTarget name="tresestrelas" size="210.000000 300.000000" />
+    <ImageTarget name="camposulxhuqiao" size="420.000000 600.000000" />
+    <ImageTarget name="campooesteqinglong" size="420.000000 600.000000" />
+    <ImageTarget name="camponortexuanwu" size="420.000000 600.000000" />
+    <ImageTarget name="campolestebaihu" size="420.000000 600.000000" />
+    <ImageTarget name="camposul" size="210.000000 300.000000" />
+    <ImageTarget name="camponorte" size="210.000000 300.000000" />
+    <ImageTarget name="campooeste" size="210.000000 300.000000" />
+    <ImageTarget name="campoleste" size="420.000000 600.000000" />
+    <ImageTarget name="acampamento" size="210.000000 300.000000" />
+    <ImageTarget name="asas" size="210.000000 300.000000" />
+    <ImageTarget name="bem" size="210.000000 300.000000" />
+    <ImageTarget name="bicodetartaruga" size="210.000000 300.000000" />
+    <ImageTarget name="cabecapeluda" size="210.000000 300.000000" />
+    <ImageTarget name="carruagem" size="210.000000 300.000000" />
+    <ImageTarget name="cauda" size="210.000000 300.000000" />
+    <ImageTarget name="chifre" size="210.000000 300.000000" />
+    <ImageTarget name="coracao" size="210.000000 300.000000" />
+    <ImageTarget name="estomago" size="210.000000 300.000000" />
+    <ImageTarget name="estrela" size="210.000000 300.000000" />
+    <ImageTarget name="fantasma" size="210.000000 300.000000" />
+    <ImageTarget name="gado" size="210.000000 300.000000" />
+    <ImageTarget name="garota" size="210.000000 300.000000" />
+    <ImageTarget name="huanglong" size="210.000000 300.000000" />
+    <ImageTarget name="laco" size="210.000000 300.000000" />
+    <ImageTarget name="mergulhao" size="210.000000 300.000000" />
+    <ImageTarget name="muro" size="210.000000 300.000000" />
+    <ImageTarget name="peneira" size="210.000000 300.000000" />
+    <ImageTarget name="pernas" size="210.000000 300.000000" />
+    <ImageTarget name="pescoco" size="210.000000 300.000000" />
+    <ImageTarget name="quarto" size="210.000000 300.000000" />
+    <ImageTarget name="raiz" size="210.000000 300.000000" />
+    <ImageTarget name="rede" size="210.000000 300.000000" />
+    <ImageTarget name="redegrande" size="210.000000 300.000000" />
+    <ImageTarget name="salgueiro" size="210.000000 300.000000" />
+    <ImageTarget name="telhado" size="210.000000 300.000000" />
+    <ImageTarget name="vazio" size="210.000000 300.000000" />
+    <ImageTarget name="erlangshen" size="210.000000 300.000000" />
+    <ImageTarget name="houyi" size="210.000000 300.000000" />
+    <ImageTarget name="imperadoramarelo" size="210.000000 300.000000" />
+    <ImageTarget name="imperadordejade" size="210.000000 300.000000" />
+    <ImageTarget name="nezha" size="210.000000 300.000000" />
+    <ImageTarget name="nuwa" size="210.000000 300.000000" />
+    <ImageTarget name="pangu" size="210.000000 300.000000" />
+    <ImageTarget name="sunwukong" size="210.000000 300.000000" />
+    <ImageTarget name="xingtian" size="210.000000 300.000000" />
+    <ImageTarget name="zhongkui" size="210.000000 300.000000" />
+    <ImageTarget name="targettigre" size="210.000000 300.000000" />
+    <ImageTarget name="targetserpente" size="210.000000 300.000000" />
+    <ImageTarget name="targetrato" size="210.000000 300.000000" />
+    <ImageTarget name="targetmacaco" size="210.000000 300.000000" />
+    <ImageTarget name="targetjavali" size="210.000000 300.000000" />
+    <ImageTarget name="targetdragao" size="210.000000 300.000000" />
+    <ImageTarget name="targetcoelho" size="210.000000 300.000000" />
+    <ImageTarget name="targetcavalo" size="210.000000 300.000000" />
+    <ImageTarget name="targetcarneiro" size="210.000000 300.000000" />
+    <ImageTarget name="targetcachorro" size="210.000000 300.000000" />
+    <ImageTarget name="targetgalo" size="210.000000 300.000000" />
+  </Tracking>
+</QCARConfig>
