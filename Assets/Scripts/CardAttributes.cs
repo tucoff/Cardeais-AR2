@@ -6,22 +6,40 @@ using TMPro;
 
 public class CardAttributes : MonoBehaviour
 {
-    public Image healthBar; // Barra de vida
-    public TextMeshProUGUI healthText; // Texto da vida
-    public TextMeshProUGUI dmgText; // Texto do dano
-    public int fullLife; // Vida total
-    public int currentLife; // Vida atual
+    public Sprite img; // Imagem da carta
+    public string cardName; // Nome da carta
+    public string habilidadeEspecial; // Descrição da carta
+    public int life; // Vida total
     public int damage; // Dano
     public int index; // Índice
 
-    private void Start() 
+    public int getLife()
     {
-        currentLife = fullLife; // Define a vida atual como a vida total
-        dmgText.text = damage.ToString(); // Define o texto do dano como uma string do valor do dano
+        return life;
     }
 
-    private void FixedUpdate() {
-        healthBar.fillAmount = Mathf.MoveTowards(healthBar.fillAmount, (float)currentLife / fullLife, 2f * Time.deltaTime); // Atualiza a barra de vida gradualmente
-        healthText.text = currentLife.ToString(); // Atualiza o texto da vida
+    public int getDamage()
+    {
+        return damage;
+    }
+
+    public string getCardName()
+    {
+        return cardName;
+    }
+
+    public string getHabilidadeEspecial()
+    {
+        return habilidadeEspecial;
+    }
+
+    public int getIndex()
+    {
+        return index;
+    }
+
+    public Sprite getImage()
+    {
+        return img;
     }
 }

@@ -1034,7 +1034,9 @@ GameObject:
   - component: {fileID: 99913128}
   - component: {fileID: 99913130}
   - component: {fileID: 99913132}
+  - component: {fileID: 99913134}
   - component: {fileID: 99913133}
+  - component: {fileID: 99913135}
   m_Layer: 0
   m_Name: PAN GU
   m_TagString: Untagged
@@ -1128,7 +1130,7 @@ MonoBehaviour:
   mMotionHint: 1
   mTrackingOptimization: 0
   mTrackingOptimizationNeedsUpgrade: 0
-  mPreview: {fileID: 99913133}
+  mPreview: {fileID: 99913134}
 --- !u!65 &99913130
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1186,6 +1188,18 @@ MonoBehaviour:
   m_GameObject: {fileID: 99913125}
   m_Enabled: 1
   m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9837816b0fb6b184490d38e84ed81c97, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &99913134
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 99913125}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
   m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
@@ -1196,6 +1210,24 @@ MonoBehaviour:
   mCastedBehaviour: {fileID: 99913129}
   mMeshFilter: {fileID: 0}
   mMeshRenderer: {fileID: 0}
+--- !u!114 &99913135
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 99913125}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1dc390619c746914c8231037e0b5a7b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  img: {fileID: 21300000, guid: 2a1d43ff841d8b14eb2a6e3596788a3b, type: 3}
+  cardName: Pan Gu
+  habilidadeEspecial: 
+  life: 0
+  damage: 0
+  index: 0
 --- !u!1 &116079460
 GameObject:
   m_ObjectHideFlags: 0
@@ -1211,6 +1243,7 @@ GameObject:
   - component: {fileID: 116079467}
   - component: {fileID: 116079469}
   - component: {fileID: 116079470}
+  - component: {fileID: 116079471}
   m_Layer: 0
   m_Name: RATO
   m_TagString: Untagged
@@ -1408,6 +1441,24 @@ MonoBehaviour:
   mCastedBehaviour: {fileID: 116079464}
   mMeshFilter: {fileID: 0}
   mMeshRenderer: {fileID: 0}
+--- !u!114 &116079471
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 116079460}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1dc390619c746914c8231037e0b5a7b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  img: {fileID: 21300000, guid: 2325b22ad877b30449854c53155f9534, type: 3}
+  cardName: Rato
+  habilidadeEspecial: 
+  life: 0
+  damage: 0
+  index: 0
 --- !u!1 &129585036
 GameObject:
   m_ObjectHideFlags: 0
@@ -1465,9 +1516,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Norte
-
-'
+  m_text: '   X     '
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1501,7 +1550,7 @@ MonoBehaviour:
   m_fontSizeMin: 0
   m_fontSizeMax: 0
   m_fontStyle: 0
-  m_HorizontalAlignment: 2
+  m_HorizontalAlignment: 1
   m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -1759,7 +1808,9 @@ GameObject:
   - component: {fileID: 163428083}
   - component: {fileID: 163428085}
   - component: {fileID: 163428087}
+  - component: {fileID: 163428089}
   - component: {fileID: 163428088}
+  - component: {fileID: 163428090}
   m_Layer: 0
   m_Name: XING TIAN
   m_TagString: Untagged
@@ -1853,7 +1904,7 @@ MonoBehaviour:
   mMotionHint: 1
   mTrackingOptimization: 0
   mTrackingOptimizationNeedsUpgrade: 0
-  mPreview: {fileID: 163428088}
+  mPreview: {fileID: 163428089}
 --- !u!65 &163428085
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1911,6 +1962,18 @@ MonoBehaviour:
   m_GameObject: {fileID: 163428080}
   m_Enabled: 1
   m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9837816b0fb6b184490d38e84ed81c97, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &163428089
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 163428080}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
   m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
@@ -1921,6 +1984,24 @@ MonoBehaviour:
   mCastedBehaviour: {fileID: 163428084}
   mMeshFilter: {fileID: 0}
   mMeshRenderer: {fileID: 0}
+--- !u!114 &163428090
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 163428080}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1dc390619c746914c8231037e0b5a7b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  img: {fileID: 21300000, guid: 134fe7bcdccf1be4d912bf8eca1fe254, type: 3}
+  cardName: Xing Tian
+  habilidadeEspecial: 
+  life: 0
+  damage: 0
+  index: 0
 --- !u!1 &168432337
 GameObject:
   m_ObjectHideFlags: 0
@@ -2283,7 +2364,9 @@ GameObject:
   - component: {fileID: 263931883}
   - component: {fileID: 263931885}
   - component: {fileID: 263931887}
+  - component: {fileID: 263931889}
   - component: {fileID: 263931888}
+  - component: {fileID: 263931890}
   m_Layer: 0
   m_Name: COELHO
   m_TagString: Untagged
@@ -2377,7 +2460,7 @@ MonoBehaviour:
   mMotionHint: 1
   mTrackingOptimization: 0
   mTrackingOptimizationNeedsUpgrade: 0
-  mPreview: {fileID: 263931888}
+  mPreview: {fileID: 263931889}
 --- !u!65 &263931885
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2435,6 +2518,18 @@ MonoBehaviour:
   m_GameObject: {fileID: 263931880}
   m_Enabled: 1
   m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9837816b0fb6b184490d38e84ed81c97, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &263931889
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 263931880}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
   m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
@@ -2445,6 +2540,24 @@ MonoBehaviour:
   mCastedBehaviour: {fileID: 263931884}
   mMeshFilter: {fileID: 0}
   mMeshRenderer: {fileID: 0}
+--- !u!114 &263931890
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 263931880}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1dc390619c746914c8231037e0b5a7b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  img: {fileID: 21300000, guid: ec8f1824d74a0a04a92b8fa22ad9043c, type: 3}
+  cardName: Coelho
+  habilidadeEspecial: 
+  life: 0
+  damage: 0
+  index: 0
 --- !u!1 &267736751
 GameObject:
   m_ObjectHideFlags: 0
@@ -3164,7 +3277,9 @@ GameObject:
   - component: {fileID: 345848243}
   - component: {fileID: 345848245}
   - component: {fileID: 345848247}
+  - component: {fileID: 345848249}
   - component: {fileID: 345848248}
+  - component: {fileID: 345848250}
   m_Layer: 0
   m_Name: GALO
   m_TagString: Untagged
@@ -3258,7 +3373,7 @@ MonoBehaviour:
   mMotionHint: 1
   mTrackingOptimization: 0
   mTrackingOptimizationNeedsUpgrade: 0
-  mPreview: {fileID: 345848248}
+  mPreview: {fileID: 345848249}
 --- !u!65 &345848245
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3316,6 +3431,18 @@ MonoBehaviour:
   m_GameObject: {fileID: 345848240}
   m_Enabled: 1
   m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9837816b0fb6b184490d38e84ed81c97, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &345848249
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 345848240}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
   m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
@@ -3326,6 +3453,24 @@ MonoBehaviour:
   mCastedBehaviour: {fileID: 345848244}
   mMeshFilter: {fileID: 0}
   mMeshRenderer: {fileID: 0}
+--- !u!114 &345848250
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 345848240}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1dc390619c746914c8231037e0b5a7b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  img: {fileID: 21300000, guid: 210da34ecb4ae4a4ea57df11cfc7e23e, type: 3}
+  cardName: Galo
+  habilidadeEspecial: 
+  life: 0
+  damage: 0
+  index: 0
 --- !u!1 &364030109
 GameObject:
   m_ObjectHideFlags: 0
@@ -3579,7 +3724,9 @@ GameObject:
   - component: {fileID: 386678206}
   - component: {fileID: 386678208}
   - component: {fileID: 386678210}
+  - component: {fileID: 386678212}
   - component: {fileID: 386678211}
+  - component: {fileID: 386678213}
   m_Layer: 0
   m_Name: CAVALO
   m_TagString: Untagged
@@ -3673,7 +3820,7 @@ MonoBehaviour:
   mMotionHint: 1
   mTrackingOptimization: 0
   mTrackingOptimizationNeedsUpgrade: 0
-  mPreview: {fileID: 386678211}
+  mPreview: {fileID: 386678212}
 --- !u!65 &386678208
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3731,6 +3878,18 @@ MonoBehaviour:
   m_GameObject: {fileID: 386678203}
   m_Enabled: 1
   m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9837816b0fb6b184490d38e84ed81c97, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &386678212
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 386678203}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
   m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
@@ -3741,6 +3900,24 @@ MonoBehaviour:
   mCastedBehaviour: {fileID: 386678207}
   mMeshFilter: {fileID: 0}
   mMeshRenderer: {fileID: 0}
+--- !u!114 &386678213
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 386678203}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1dc390619c746914c8231037e0b5a7b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  img: {fileID: 21300000, guid: a1188cccd49919144a49f84f14038bbc, type: 3}
+  cardName: Cavalo
+  habilidadeEspecial: 
+  life: 0
+  damage: 0
+  index: 0
 --- !u!1 &444177095
 GameObject:
   m_ObjectHideFlags: 0
@@ -4171,7 +4348,9 @@ GameObject:
   - component: {fileID: 492507260}
   - component: {fileID: 492507262}
   - component: {fileID: 492507264}
+  - component: {fileID: 492507266}
   - component: {fileID: 492507265}
+  - component: {fileID: 492507267}
   m_Layer: 0
   m_Name: BOI
   m_TagString: Untagged
@@ -4265,7 +4444,7 @@ MonoBehaviour:
   mMotionHint: 1
   mTrackingOptimization: 0
   mTrackingOptimizationNeedsUpgrade: 0
-  mPreview: {fileID: 492507265}
+  mPreview: {fileID: 492507266}
 --- !u!65 &492507262
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4323,6 +4502,18 @@ MonoBehaviour:
   m_GameObject: {fileID: 492507257}
   m_Enabled: 1
   m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9837816b0fb6b184490d38e84ed81c97, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &492507266
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 492507257}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
   m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
@@ -4333,6 +4524,24 @@ MonoBehaviour:
   mCastedBehaviour: {fileID: 492507261}
   mMeshFilter: {fileID: 0}
   mMeshRenderer: {fileID: 0}
+--- !u!114 &492507267
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 492507257}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1dc390619c746914c8231037e0b5a7b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  img: {fileID: 21300000, guid: 03e1ed9ad3a4c5b419d05f9778931172, type: 3}
+  cardName: Boi
+  habilidadeEspecial: 
+  life: 0
+  damage: 0
+  index: 0
 --- !u!1 &507300520
 GameObject:
   m_ObjectHideFlags: 0
@@ -4982,9 +5191,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Oeste
-
-'
+  m_text: '   X     '
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -5018,7 +5225,7 @@ MonoBehaviour:
   m_fontSizeMin: 0
   m_fontSizeMax: 0
   m_fontStyle: 0
-  m_HorizontalAlignment: 2
+  m_HorizontalAlignment: 1
   m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -5728,7 +5935,9 @@ GameObject:
   - component: {fileID: 698982052}
   - component: {fileID: 698982054}
   - component: {fileID: 698982056}
+  - component: {fileID: 698982058}
   - component: {fileID: 698982057}
+  - component: {fileID: 698982059}
   m_Layer: 0
   m_Name: HOU YI
   m_TagString: Untagged
@@ -5822,7 +6031,7 @@ MonoBehaviour:
   mMotionHint: 1
   mTrackingOptimization: 0
   mTrackingOptimizationNeedsUpgrade: 0
-  mPreview: {fileID: 698982057}
+  mPreview: {fileID: 698982058}
 --- !u!65 &698982054
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5880,6 +6089,18 @@ MonoBehaviour:
   m_GameObject: {fileID: 698982049}
   m_Enabled: 1
   m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9837816b0fb6b184490d38e84ed81c97, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &698982058
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 698982049}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
   m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
@@ -5890,6 +6111,24 @@ MonoBehaviour:
   mCastedBehaviour: {fileID: 698982053}
   mMeshFilter: {fileID: 0}
   mMeshRenderer: {fileID: 0}
+--- !u!114 &698982059
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 698982049}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1dc390619c746914c8231037e0b5a7b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  img: {fileID: 21300000, guid: 5e01ad2a67111be468e6601424d0b383, type: 3}
+  cardName: Hou Yi
+  habilidadeEspecial: 
+  life: 0
+  damage: 0
+  index: 0
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -6212,9 +6451,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Leste
-
-'
+  m_text: '   X     '
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -6248,7 +6485,7 @@ MonoBehaviour:
   m_fontSizeMin: 0
   m_fontSizeMax: 0
   m_fontStyle: 0
-  m_HorizontalAlignment: 2
+  m_HorizontalAlignment: 1
   m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -6993,7 +7230,9 @@ GameObject:
   - component: {fileID: 995650301}
   - component: {fileID: 995650303}
   - component: {fileID: 995650305}
+  - component: {fileID: 995650307}
   - component: {fileID: 995650306}
+  - component: {fileID: 995650308}
   m_Layer: 0
   m_Name: "C\xC3O"
   m_TagString: Untagged
@@ -7087,7 +7326,7 @@ MonoBehaviour:
   mMotionHint: 1
   mTrackingOptimization: 0
   mTrackingOptimizationNeedsUpgrade: 0
-  mPreview: {fileID: 995650306}
+  mPreview: {fileID: 995650307}
 --- !u!65 &995650303
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7145,6 +7384,18 @@ MonoBehaviour:
   m_GameObject: {fileID: 995650298}
   m_Enabled: 1
   m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9837816b0fb6b184490d38e84ed81c97, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &995650307
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 995650298}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
   m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
@@ -7155,6 +7406,24 @@ MonoBehaviour:
   mCastedBehaviour: {fileID: 995650302}
   mMeshFilter: {fileID: 0}
   mMeshRenderer: {fileID: 0}
+--- !u!114 &995650308
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 995650298}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1dc390619c746914c8231037e0b5a7b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  img: {fileID: 21300000, guid: 03531555f0f81e847957a7e7ac07461e, type: 3}
+  cardName: "C\xE3o"
+  habilidadeEspecial: 
+  life: 0
+  damage: 0
+  index: 0
 --- !u!1 &1007178124
 GameObject:
   m_ObjectHideFlags: 0
@@ -7251,7 +7520,9 @@ GameObject:
   - component: {fileID: 1012643397}
   - component: {fileID: 1012643399}
   - component: {fileID: 1012643401}
+  - component: {fileID: 1012643403}
   - component: {fileID: 1012643402}
+  - component: {fileID: 1012643404}
   m_Layer: 0
   m_Name: "DRAG\xC3O"
   m_TagString: Untagged
@@ -7345,7 +7616,7 @@ MonoBehaviour:
   mMotionHint: 1
   mTrackingOptimization: 0
   mTrackingOptimizationNeedsUpgrade: 0
-  mPreview: {fileID: 1012643402}
+  mPreview: {fileID: 1012643403}
 --- !u!65 &1012643399
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7403,6 +7674,18 @@ MonoBehaviour:
   m_GameObject: {fileID: 1012643394}
   m_Enabled: 1
   m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9837816b0fb6b184490d38e84ed81c97, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1012643403
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1012643394}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
   m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
@@ -7413,6 +7696,24 @@ MonoBehaviour:
   mCastedBehaviour: {fileID: 1012643398}
   mMeshFilter: {fileID: 0}
   mMeshRenderer: {fileID: 0}
+--- !u!114 &1012643404
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1012643394}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1dc390619c746914c8231037e0b5a7b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  img: {fileID: 21300000, guid: 733c75f105c38db40928425cc2a15b8b, type: 3}
+  cardName: "Drag\xE3o"
+  habilidadeEspecial: 
+  life: 0
+  damage: 0
+  index: 0
 --- !u!1 &1037935252
 GameObject:
   m_ObjectHideFlags: 0
@@ -7470,9 +7771,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Sul
-
-'
+  m_text: '   X     '
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -7506,7 +7805,7 @@ MonoBehaviour:
   m_fontSizeMin: 0
   m_fontSizeMax: 0
   m_fontStyle: 0
-  m_HorizontalAlignment: 2
+  m_HorizontalAlignment: 1
   m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -7735,7 +8034,9 @@ GameObject:
   - component: {fileID: 1112446819}
   - component: {fileID: 1112446821}
   - component: {fileID: 1112446823}
+  - component: {fileID: 1112446825}
   - component: {fileID: 1112446824}
+  - component: {fileID: 1112446826}
   m_Layer: 0
   m_Name: ZHONG KUI
   m_TagString: Untagged
@@ -7829,7 +8130,7 @@ MonoBehaviour:
   mMotionHint: 1
   mTrackingOptimization: 0
   mTrackingOptimizationNeedsUpgrade: 0
-  mPreview: {fileID: 1112446824}
+  mPreview: {fileID: 1112446825}
 --- !u!65 &1112446821
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7887,6 +8188,18 @@ MonoBehaviour:
   m_GameObject: {fileID: 1112446816}
   m_Enabled: 1
   m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9837816b0fb6b184490d38e84ed81c97, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1112446825
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1112446816}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
   m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
@@ -7897,6 +8210,24 @@ MonoBehaviour:
   mCastedBehaviour: {fileID: 1112446820}
   mMeshFilter: {fileID: 0}
   mMeshRenderer: {fileID: 0}
+--- !u!114 &1112446826
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1112446816}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1dc390619c746914c8231037e0b5a7b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  img: {fileID: 21300000, guid: d9f901016bc75c54387c2ddb96a1e697, type: 3}
+  cardName: Zhong Kui
+  habilidadeEspecial: 
+  life: 0
+  damage: 0
+  index: 0
 --- !u!1 &1120877221
 GameObject:
   m_ObjectHideFlags: 0
@@ -8331,7 +8662,9 @@ GameObject:
   - component: {fileID: 1277309293}
   - component: {fileID: 1277309295}
   - component: {fileID: 1277309297}
+  - component: {fileID: 1277309299}
   - component: {fileID: 1277309298}
+  - component: {fileID: 1277309300}
   m_Layer: 0
   m_Name: NEZHA
   m_TagString: Untagged
@@ -8425,7 +8758,7 @@ MonoBehaviour:
   mMotionHint: 1
   mTrackingOptimization: 0
   mTrackingOptimizationNeedsUpgrade: 0
-  mPreview: {fileID: 1277309298}
+  mPreview: {fileID: 1277309299}
 --- !u!65 &1277309295
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8483,6 +8816,18 @@ MonoBehaviour:
   m_GameObject: {fileID: 1277309290}
   m_Enabled: 1
   m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9837816b0fb6b184490d38e84ed81c97, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1277309299
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1277309290}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
   m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
@@ -8493,6 +8838,24 @@ MonoBehaviour:
   mCastedBehaviour: {fileID: 1277309294}
   mMeshFilter: {fileID: 0}
   mMeshRenderer: {fileID: 0}
+--- !u!114 &1277309300
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1277309290}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1dc390619c746914c8231037e0b5a7b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  img: {fileID: 21300000, guid: 2c13aa7fa7ab07f488c3e3d22a92625d, type: 3}
+  cardName: Nezha
+  habilidadeEspecial: 
+  life: 0
+  damage: 0
+  index: 0
 --- !u!1 &1314694839
 GameObject:
   m_ObjectHideFlags: 0
@@ -9443,7 +9806,9 @@ GameObject:
   - component: {fileID: 1499387538}
   - component: {fileID: 1499387540}
   - component: {fileID: 1499387542}
+  - component: {fileID: 1499387544}
   - component: {fileID: 1499387543}
+  - component: {fileID: 1499387545}
   m_Layer: 0
   m_Name: SUN WUKONG
   m_TagString: Untagged
@@ -9537,7 +9902,7 @@ MonoBehaviour:
   mMotionHint: 1
   mTrackingOptimization: 0
   mTrackingOptimizationNeedsUpgrade: 0
-  mPreview: {fileID: 1499387543}
+  mPreview: {fileID: 1499387544}
 --- !u!65 &1499387540
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9595,6 +9960,18 @@ MonoBehaviour:
   m_GameObject: {fileID: 1499387535}
   m_Enabled: 1
   m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9837816b0fb6b184490d38e84ed81c97, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1499387544
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1499387535}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
   m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
@@ -9605,6 +9982,24 @@ MonoBehaviour:
   mCastedBehaviour: {fileID: 1499387539}
   mMeshFilter: {fileID: 0}
   mMeshRenderer: {fileID: 0}
+--- !u!114 &1499387545
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1499387535}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1dc390619c746914c8231037e0b5a7b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  img: {fileID: 21300000, guid: 8445aff39647b4d448f1f1757941ce08, type: 3}
+  cardName: Sun Wukong
+  habilidadeEspecial: 
+  life: 0
+  damage: 0
+  index: 0
 --- !u!1 &1581396558
 GameObject:
   m_ObjectHideFlags: 0
@@ -9990,7 +10385,9 @@ GameObject:
   - component: {fileID: 1637526867}
   - component: {fileID: 1637526869}
   - component: {fileID: 1637526871}
+  - component: {fileID: 1637526873}
   - component: {fileID: 1637526872}
+  - component: {fileID: 1637526874}
   m_Layer: 0
   m_Name: IMPERADOR DE JADE
   m_TagString: Untagged
@@ -10084,7 +10481,7 @@ MonoBehaviour:
   mMotionHint: 1
   mTrackingOptimization: 0
   mTrackingOptimizationNeedsUpgrade: 0
-  mPreview: {fileID: 1637526872}
+  mPreview: {fileID: 1637526873}
 --- !u!65 &1637526869
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10142,6 +10539,18 @@ MonoBehaviour:
   m_GameObject: {fileID: 1637526864}
   m_Enabled: 1
   m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9837816b0fb6b184490d38e84ed81c97, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1637526873
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1637526864}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
   m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
@@ -10152,6 +10561,24 @@ MonoBehaviour:
   mCastedBehaviour: {fileID: 1637526868}
   mMeshFilter: {fileID: 0}
   mMeshRenderer: {fileID: 0}
+--- !u!114 &1637526874
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1637526864}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1dc390619c746914c8231037e0b5a7b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  img: {fileID: 21300000, guid: e0c877c1a1ee1f34d9a7164ef7f1c07a, type: 3}
+  cardName: Imperador de Jade
+  habilidadeEspecial: 
+  life: 0
+  damage: 0
+  index: 0
 --- !u!1 &1650526821
 GameObject:
   m_ObjectHideFlags: 0
@@ -10841,7 +11268,9 @@ GameObject:
   - component: {fileID: 1780598358}
   - component: {fileID: 1780598360}
   - component: {fileID: 1780598362}
+  - component: {fileID: 1780598364}
   - component: {fileID: 1780598363}
+  - component: {fileID: 1780598365}
   m_Layer: 0
   m_Name: COBRA
   m_TagString: Untagged
@@ -10935,7 +11364,7 @@ MonoBehaviour:
   mMotionHint: 1
   mTrackingOptimization: 0
   mTrackingOptimizationNeedsUpgrade: 0
-  mPreview: {fileID: 1780598363}
+  mPreview: {fileID: 1780598364}
 --- !u!65 &1780598360
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10993,6 +11422,18 @@ MonoBehaviour:
   m_GameObject: {fileID: 1780598355}
   m_Enabled: 1
   m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9837816b0fb6b184490d38e84ed81c97, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1780598364
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1780598355}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
   m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
@@ -11003,6 +11444,24 @@ MonoBehaviour:
   mCastedBehaviour: {fileID: 1780598359}
   mMeshFilter: {fileID: 0}
   mMeshRenderer: {fileID: 0}
+--- !u!114 &1780598365
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1780598355}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1dc390619c746914c8231037e0b5a7b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  img: {fileID: 21300000, guid: 9f805003f5e87c043ad618fec4940d6f, type: 3}
+  cardName: Cobra
+  habilidadeEspecial: 
+  life: 0
+  damage: 0
+  index: 0
 --- !u!1 &1833672891
 GameObject:
   m_ObjectHideFlags: 0
@@ -11371,7 +11830,9 @@ GameObject:
   - component: {fileID: 1870370071}
   - component: {fileID: 1870370073}
   - component: {fileID: 1870370075}
+  - component: {fileID: 1870370077}
   - component: {fileID: 1870370076}
+  - component: {fileID: 1870370078}
   m_Layer: 0
   m_Name: CABRA
   m_TagString: Untagged
@@ -11465,7 +11926,7 @@ MonoBehaviour:
   mMotionHint: 1
   mTrackingOptimization: 0
   mTrackingOptimizationNeedsUpgrade: 0
-  mPreview: {fileID: 1870370076}
+  mPreview: {fileID: 1870370077}
 --- !u!65 &1870370073
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -11523,6 +11984,18 @@ MonoBehaviour:
   m_GameObject: {fileID: 1870370068}
   m_Enabled: 1
   m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9837816b0fb6b184490d38e84ed81c97, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1870370077
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1870370068}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
   m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
@@ -11533,6 +12006,24 @@ MonoBehaviour:
   mCastedBehaviour: {fileID: 1870370072}
   mMeshFilter: {fileID: 0}
   mMeshRenderer: {fileID: 0}
+--- !u!114 &1870370078
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1870370068}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1dc390619c746914c8231037e0b5a7b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  img: {fileID: 21300000, guid: f04ebaad688106c4ea33a176031a98b3, type: 3}
+  cardName: Cabra
+  habilidadeEspecial: 
+  life: 0
+  damage: 0
+  index: 0
 --- !u!1 &1880816897
 GameObject:
   m_ObjectHideFlags: 0
@@ -11901,7 +12392,9 @@ GameObject:
   - component: {fileID: 1898242327}
   - component: {fileID: 1898242329}
   - component: {fileID: 1898242331}
+  - component: {fileID: 1898242333}
   - component: {fileID: 1898242332}
+  - component: {fileID: 1898242334}
   m_Layer: 0
   m_Name: MACACO
   m_TagString: Untagged
@@ -11995,7 +12488,7 @@ MonoBehaviour:
   mMotionHint: 1
   mTrackingOptimization: 0
   mTrackingOptimizationNeedsUpgrade: 0
-  mPreview: {fileID: 1898242332}
+  mPreview: {fileID: 1898242333}
 --- !u!65 &1898242329
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -12053,6 +12546,18 @@ MonoBehaviour:
   m_GameObject: {fileID: 1898242324}
   m_Enabled: 1
   m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9837816b0fb6b184490d38e84ed81c97, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1898242333
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1898242324}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
   m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
@@ -12063,6 +12568,24 @@ MonoBehaviour:
   mCastedBehaviour: {fileID: 1898242328}
   mMeshFilter: {fileID: 0}
   mMeshRenderer: {fileID: 0}
+--- !u!114 &1898242334
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1898242324}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1dc390619c746914c8231037e0b5a7b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  img: {fileID: 21300000, guid: 7a72e52b4dba9684394e1c781a2e5e85, type: 3}
+  cardName: Macaco
+  habilidadeEspecial: 
+  life: 0
+  damage: 0
+  index: 0
 --- !u!1 &1909566682
 GameObject:
   m_ObjectHideFlags: 0
@@ -12159,7 +12682,9 @@ GameObject:
   - component: {fileID: 1920050020}
   - component: {fileID: 1920050022}
   - component: {fileID: 1920050024}
+  - component: {fileID: 1920050026}
   - component: {fileID: 1920050025}
+  - component: {fileID: 1920050027}
   m_Layer: 0
   m_Name: IMPERADOR DE AMARELO
   m_TagString: Untagged
@@ -12253,7 +12778,7 @@ MonoBehaviour:
   mMotionHint: 1
   mTrackingOptimization: 0
   mTrackingOptimizationNeedsUpgrade: 0
-  mPreview: {fileID: 1920050025}
+  mPreview: {fileID: 1920050026}
 --- !u!65 &1920050022
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -12311,6 +12836,18 @@ MonoBehaviour:
   m_GameObject: {fileID: 1920050017}
   m_Enabled: 1
   m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9837816b0fb6b184490d38e84ed81c97, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1920050026
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1920050017}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
   m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
@@ -12321,6 +12858,24 @@ MonoBehaviour:
   mCastedBehaviour: {fileID: 1920050021}
   mMeshFilter: {fileID: 0}
   mMeshRenderer: {fileID: 0}
+--- !u!114 &1920050027
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1920050017}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1dc390619c746914c8231037e0b5a7b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  img: {fileID: 21300000, guid: bee9cc67d013c2244b48992825e4ebdd, type: 3}
+  cardName: Imperador Amarelo
+  habilidadeEspecial: 
+  life: 0
+  damage: 0
+  index: 0
 --- !u!1 &1960657823
 GameObject:
   m_ObjectHideFlags: 0
@@ -12334,7 +12889,9 @@ GameObject:
   - component: {fileID: 1960657826}
   - component: {fileID: 1960657828}
   - component: {fileID: 1960657830}
+  - component: {fileID: 1960657832}
   - component: {fileID: 1960657831}
+  - component: {fileID: 1960657833}
   m_Layer: 0
   m_Name: JAVALI
   m_TagString: Untagged
@@ -12428,7 +12985,7 @@ MonoBehaviour:
   mMotionHint: 1
   mTrackingOptimization: 0
   mTrackingOptimizationNeedsUpgrade: 0
-  mPreview: {fileID: 1960657831}
+  mPreview: {fileID: 1960657832}
 --- !u!65 &1960657828
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -12486,6 +13043,18 @@ MonoBehaviour:
   m_GameObject: {fileID: 1960657823}
   m_Enabled: 1
   m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9837816b0fb6b184490d38e84ed81c97, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1960657832
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1960657823}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
   m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
@@ -12496,6 +13065,24 @@ MonoBehaviour:
   mCastedBehaviour: {fileID: 1960657827}
   mMeshFilter: {fileID: 0}
   mMeshRenderer: {fileID: 0}
+--- !u!114 &1960657833
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1960657823}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1dc390619c746914c8231037e0b5a7b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  img: {fileID: 21300000, guid: adb2641d5e4a40345952e3239fa510bd, type: 3}
+  cardName: Javali
+  habilidadeEspecial: 
+  life: 0
+  damage: 0
+  index: 0
 --- !u!1 &2007496868
 GameObject:
   m_ObjectHideFlags: 0
@@ -12675,7 +13262,9 @@ GameObject:
   - component: {fileID: 2028402070}
   - component: {fileID: 2028402072}
   - component: {fileID: 2028402074}
+  - component: {fileID: 2028402076}
   - component: {fileID: 2028402075}
+  - component: {fileID: 2028402077}
   m_Layer: 0
   m_Name: NU WA
   m_TagString: Untagged
@@ -12769,7 +13358,7 @@ MonoBehaviour:
   mMotionHint: 1
   mTrackingOptimization: 0
   mTrackingOptimizationNeedsUpgrade: 0
-  mPreview: {fileID: 2028402075}
+  mPreview: {fileID: 2028402076}
 --- !u!65 &2028402072
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -12827,6 +13416,18 @@ MonoBehaviour:
   m_GameObject: {fileID: 2028402067}
   m_Enabled: 1
   m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9837816b0fb6b184490d38e84ed81c97, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &2028402076
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2028402067}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
   m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
@@ -12837,6 +13438,24 @@ MonoBehaviour:
   mCastedBehaviour: {fileID: 2028402071}
   mMeshFilter: {fileID: 0}
   mMeshRenderer: {fileID: 0}
+--- !u!114 &2028402077
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2028402067}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1dc390619c746914c8231037e0b5a7b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  img: {fileID: 21300000, guid: 508543b1f4946e048a1cf7fa7f396527, type: 3}
+  cardName: Nu Wa
+  habilidadeEspecial: 
+  life: 0
+  damage: 0
+  index: 0
 --- !u!1 &2041336385
 GameObject:
   m_ObjectHideFlags: 0
@@ -12850,7 +13469,9 @@ GameObject:
   - component: {fileID: 2041336388}
   - component: {fileID: 2041336390}
   - component: {fileID: 2041336392}
+  - component: {fileID: 2041336394}
   - component: {fileID: 2041336393}
+  - component: {fileID: 2041336395}
   m_Layer: 0
   m_Name: TIGRE
   m_TagString: Untagged
@@ -12944,7 +13565,7 @@ MonoBehaviour:
   mMotionHint: 1
   mTrackingOptimization: 0
   mTrackingOptimizationNeedsUpgrade: 0
-  mPreview: {fileID: 2041336393}
+  mPreview: {fileID: 2041336394}
 --- !u!65 &2041336390
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -13002,6 +13623,18 @@ MonoBehaviour:
   m_GameObject: {fileID: 2041336385}
   m_Enabled: 1
   m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9837816b0fb6b184490d38e84ed81c97, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &2041336394
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2041336385}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
   m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
@@ -13012,6 +13645,24 @@ MonoBehaviour:
   mCastedBehaviour: {fileID: 2041336389}
   mMeshFilter: {fileID: 0}
   mMeshRenderer: {fileID: 0}
+--- !u!114 &2041336395
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2041336385}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1dc390619c746914c8231037e0b5a7b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  img: {fileID: 21300000, guid: b9e580755f64ea54eb0edd2dea7c7f64, type: 3}
+  cardName: Tigre
+  habilidadeEspecial: 
+  life: 0
+  damage: 0
+  index: 0
 --- !u!1 &2053201105
 GameObject:
   m_ObjectHideFlags: 0
@@ -13025,7 +13676,9 @@ GameObject:
   - component: {fileID: 2053201108}
   - component: {fileID: 2053201110}
   - component: {fileID: 2053201112}
+  - component: {fileID: 2053201114}
   - component: {fileID: 2053201113}
+  - component: {fileID: 2053201115}
   m_Layer: 0
   m_Name: ERLANG SHEN
   m_TagString: Untagged
@@ -13119,7 +13772,7 @@ MonoBehaviour:
   mMotionHint: 1
   mTrackingOptimization: 0
   mTrackingOptimizationNeedsUpgrade: 0
-  mPreview: {fileID: 2053201113}
+  mPreview: {fileID: 2053201114}
 --- !u!65 &2053201110
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -13177,6 +13830,18 @@ MonoBehaviour:
   m_GameObject: {fileID: 2053201105}
   m_Enabled: 1
   m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9837816b0fb6b184490d38e84ed81c97, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &2053201114
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2053201105}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
   m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
@@ -13187,6 +13852,24 @@ MonoBehaviour:
   mCastedBehaviour: {fileID: 2053201109}
   mMeshFilter: {fileID: 0}
   mMeshRenderer: {fileID: 0}
+--- !u!114 &2053201115
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2053201105}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1dc390619c746914c8231037e0b5a7b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  img: {fileID: 21300000, guid: ca8892805d1c34a4da500e0b7b063077, type: 3}
+  cardName: Erlang Shen
+  habilidadeEspecial: 
+  life: 0
+  damage: 0
+  index: 0
 --- !u!1 &2105472727
 GameObject:
   m_ObjectHideFlags: 0

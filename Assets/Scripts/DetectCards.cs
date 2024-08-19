@@ -24,6 +24,7 @@ public class DetectCards : MonoBehaviour
         if (other.gameObject.name == invocado)
         {
             invocado = "Nenhum";
+            posText.text = "Nenhum";
         }
     }
 }
