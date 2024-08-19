@@ -26,11 +26,10 @@ public class SimulationBehaviour : MonoBehaviour
     public string campoODefPos = ""; // Posição de defesa no campo Oeste
 
     // Verificações de cartas invocadas
-    public GameObject[] cSpawned; // 0,1 = N, 2,3 = L, 4,5 = S, 6,7 = O
     public Transform[] cPos; // 0,1 = N, 2,3 = L, 4,5 = S, 6,7 = O
     public bool[] cAlive; // 0 = N, 1 = L, 2 = S, 3 = O
-    public Camera[] cameras; // 0 = N, 1 = L, 2 = S, 3 = O, 4 = Top, 5 = AR
-
+    public int[] cLives; // 0 = N, 1 = L, 2 = S, 3 = O
+    public TextMeshProUGUI[] cLivesText; // 0 = N, 1 = L, 2 = S, 3 = O
     public TextMeshProUGUI roundText; // Texto que exibe o número do round
     public TextMeshProUGUI turnText; // Texto que exibe a direção do turno
 
@@ -71,6 +70,63 @@ public class SimulationBehaviour : MonoBehaviour
                 turn = 10;
             break;
         }
+    }
+
+    public void NextTurn()
+    {
+        turn++;
+        if(turn > 3)
+        {
+            turn = 0;
+        }
+    }
+
+    public GameObject atS = null;
+    public void AtkScreen()
+    {
+        if (atS.activeSelf)
+        {
+            atS.SetActive(false);
+        }
+        else
+        {
+            atS.SetActive(true);
+        }
+
+        switch(turn)
+        {
+            case 0:
+                atS.transform.GetChild(0).gameObject.SetActive(false);
+                atS.transform.GetChild(1).gameObject.SetActive(true);
+                atS.transform.GetChild(2).gameObject.SetActive(true);
+                atS.transform.GetChild(3).gameObject.SetActive(true);
+                break;
+            case 1:
+                atS.transform.GetChild(0).gameObject.SetActive(true);
+                atS.transform.GetChild(1).gameObject.SetActive(true);
+                atS.transform.GetChild(2).gameObject.SetActive(false);
+                atS.transform.GetChild(3).gameObject.SetActive(true);
+                break;
+            case 2:
+                atS.transform.GetChild(0).gameObject.SetActive(true);
+                atS.transform.GetChild(1).gameObject.SetActive(false);
+                atS.transform.GetChild(2).gameObject.SetActive(true);
+                atS.transform.GetChild(3).gameObject.SetActive(true);
+                break;
+            case 3:
+                atS.transform.GetChild(0).gameObject.SetActive(true);
+                atS.transform.GetChild(1).gameObject.SetActive(true);
+                atS.transform.GetChild(2).gameObject.SetActive(true);
+                atS.transform.GetChild(3).gameObject.SetActive(false);
+                break;
+            default:
+                break;
+        }
+    }
+
+    public void Atacar(int who)
+    {
+
     }
 
     public void ShuffleTurn()
