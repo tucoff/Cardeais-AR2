@@ -11,6 +11,7 @@ public class CardAttributes : MonoBehaviour
     public string habilidadeEspecial; // Descrição da carta
     public int life; // Vida total
     public int damage; // Dano
+    public int apr; // Número de ataques por round
     public int index; // Índice
 
     public int getLife()
@@ -36,6 +37,11 @@ public class CardAttributes : MonoBehaviour
     public int getIndex()
     {
         return index;
+    }
+
+    public int getApr()
+    {
+        return apr;
     }
 
     public Sprite getImage()

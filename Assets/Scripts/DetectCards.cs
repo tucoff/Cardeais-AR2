@@ -7,7 +7,7 @@ public class DetectCards : MonoBehaviour
 {
     public TextMeshProUGUI posText;
     public TextMeshProUGUI posFullLife;
-    string invocado = "Nenhum";
+    CardAttributes invocado = null;
 
     public int campo = 0; // 0 = N, 1 = L, 2 = S, 3 = O
     public int pos = 0; // 0 = Atk, 1 = Def
@@ -19,7 +19,7 @@ public class DetectCards : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        invocado = other.gameObject.name;
+        invocado = other.gameObject.GetComponent<CardAttributes>();
         posText.text = other.gameObject.name;
         posFullLife.text = other.gameObject.GetComponent<CardAttributes>().getLife().ToString();
         switch (campo) 
@@ -53,36 +53,36 @@ public class DetectCards : MonoBehaviour
 
     void OnTriggerExit(Collider other)
     {
-        if (other.gameObject.name == invocado)
+        if (other.gameObject.GetComponent<CardAttributes>() == invocado)
         {
-            invocado = "Nenhum";
+            invocado = null;
             posText.text = "Nenhum";
             posFullLife.text = "0";
             switch (campo) 
             {
                 case 0:
                     if(pos == 0)
-                    {GameObject.FindWithTag("Simulation").GetComponent<SimulationBehaviour>().campoNAtkPos = "";}
+                    {GameObject.FindWithTag("Simulation").GetComponent<SimulationBehaviour>().campoNAtkPos = null;}
                     else
-                    {GameObject.FindWithTag("Simulation").GetComponent<SimulationBehaviour>().campoNDefPos = "";}
+                    {GameObject.FindWithTag("Simulation").GetComponent<SimulationBehaviour>().campoNDefPos = null;}
                     break;            
                 case 1:
                     if(pos == 0)
-                    {GameObject.FindWithTag("Simulation").GetComponent<SimulationBehaviour>().campoSAtkPos = "";}
+                    {GameObject.FindWithTag("Simulation").GetComponent<SimulationBehaviour>().campoSAtkPos = null;}
                     else
-                    {GameObject.FindWithTag("Simulation").GetComponent<SimulationBehaviour>().campoSDefPos = "";}
+                    {GameObject.FindWithTag("Simulation").GetComponent<SimulationBehaviour>().campoSDefPos = null;}
                     break;            
                 case 2:
                     if(pos == 0)
-                    {GameObject.FindWithTag("Simulation").GetComponent<SimulationBehaviour>().campoLAtkPos = "";}
+                    {GameObject.FindWithTag("Simulation").GetComponent<SimulationBehaviour>().campoLAtkPos = null;}
                     else
-                    {GameObject.FindWithTag("Simulation").GetComponent<SimulationBehaviour>().campoLDefPos = "";}
+                    {GameObject.FindWithTag("Simulation").GetComponent<SimulationBehaviour>().campoLDefPos = null;}
                     break;               
                 case 3:
                     if(pos == 0)
-                    {GameObject.FindWithTag("Simulation").GetComponent<SimulationBehaviour>().campoOAtkPos = "";}
+                    {GameObject.FindWithTag("Simulation").GetComponent<SimulationBehaviour>().campoOAtkPos = null;}
                     else
-                    {GameObject.FindWithTag("Simulation").GetComponent<SimulationBehaviour>().campoODefPos = "";}
+                    {GameObject.FindWithTag("Simulation").GetComponent<SimulationBehaviour>().campoODefPos = null;}
                     break;
             }
         }
