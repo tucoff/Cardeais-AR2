@@ -17,10 +17,10 @@ public class CampoEstatico : MonoBehaviour
             // Instancia um novo campo que não se move
             GameObject newCampo = Instantiate(campo, this.transform);
             newCampo.transform.position = campo.transform.position;
-            newCampo.transform.localRotation = campo.transform.parent.localRotation;
             newCampo.transform.GetChild(0).GetComponent<MeshRenderer>().material = mat;
             newCampo.transform.GetChild(1).GetComponent<MeshRenderer>().material = mat;
-            campo.transform.gameObject.SetActive(false);
+            newCampo.transform.parent = this.transform.parent;
+            campo.transform.parent.gameObject.SetActive(false);
             created = true;
         }
     }
