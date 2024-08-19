@@ -5,7 +5,6 @@ using UnityEngine;
 
 public class SimulationBehaviour : MonoBehaviour
 {
-    bool isChanging = false; // Variável que indica se a animação de mudança está ocorrendo
     int round = 0; // Número do round atual
     [SerializeField] int turn = 0; // 0 = N, 1 = L, 2 = S, 3 = O
     
@@ -72,9 +71,23 @@ public class SimulationBehaviour : MonoBehaviour
         }
     }
 
+    public GameObject regS = null;
+    public void OpenCloseR() 
+    {
+        if (regS.activeSelf)
+        {
+            regS.SetActive(false);
+        }
+        else
+        {
+            regS.SetActive(true);
+        }
+    }
+
     public void NextTurn()
     {
         turn++;
+        round++;
         if(turn > 3)
         {
             turn = 0;
