@@ -1,11 +1,29 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class DetectCards : MonoBehaviour
 {
+    public TextMeshProUGUI posText;
+    string invocado = "Nenhum";
+
+    void Start()
+    {
+        posText.text = "Nenhum";
+    }
+
     void OnTriggerEnter(Collider other)
     {
-        Debug.Log("Card Detected: " + other.gameObject.name);
+        invocado = other.gameObject.name;
+        posText.text = other.gameObject.name;
+    }
+
+    void OnTriggerExit(Collider other)
+    {
+        if (other.gameObject.name == invocado)
+        {
+            invocado = "Nenhum";
+        }
     }
 }
