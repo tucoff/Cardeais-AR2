@@ -1508,6 +1508,7 @@ MonoBehaviour:
   cardName: Pan Gu
   habilidadeEspecial: Nenhum
   life: 0
+  currentLife: 0
   damage: 0
   apr: 1
   index: 0
@@ -1634,9 +1635,33 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 2105472727}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
   OnTargetLost:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2105472727}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &116079464
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1745,6 +1770,7 @@ MonoBehaviour:
   cardName: Rato
   habilidadeEspecial: Nenhum
   life: 100
+  currentLife: 0
   damage: 100
   apr: 1
   index: 0
@@ -2321,6 +2347,7 @@ MonoBehaviour:
   cardName: Xing Tian
   habilidadeEspecial: Nenhum
   life: 0
+  currentLife: 0
   damage: 0
   apr: 1
   index: 0
@@ -3041,6 +3068,7 @@ MonoBehaviour:
   cardName: Coelho
   habilidadeEspecial: Nenhum
   life: 100
+  currentLife: 0
   damage: 100
   apr: 1
   index: 0
@@ -4192,6 +4220,7 @@ MonoBehaviour:
   cardName: Galo
   habilidadeEspecial: Nenhum
   life: 100
+  currentLife: 0
   damage: 100
   apr: 1
   index: 0
@@ -4759,6 +4788,7 @@ MonoBehaviour:
   cardName: Cavalo
   habilidadeEspecial: Nenhum
   life: 300
+  currentLife: 0
   damage: 150
   apr: 1
   index: 0
@@ -5940,6 +5970,7 @@ MonoBehaviour:
   cardName: Boi
   habilidadeEspecial: Nenhum
   life: 300
+  currentLife: 0
   damage: 150
   apr: 1
   index: 0
@@ -7667,15 +7698,15 @@ MonoBehaviour:
   campoLDefPos: {fileID: 0}
   campoOAtkPos: {fileID: 0}
   campoODefPos: {fileID: 0}
-  cPos:
-  - {fileID: 1668576846}
-  - {fileID: 364030110}
-  - {fileID: 654452674}
-  - {fileID: 161386474}
-  - {fileID: 76315054}
-  - {fileID: 836884896}
-  - {fileID: 599304646}
-  - {fileID: 1587846045}
+  cPosLivesText:
+  - {fileID: 2141233262}
+  - {fileID: 861878509}
+  - {fileID: 719698345}
+  - {fileID: 1081983849}
+  - {fileID: 1986375102}
+  - {fileID: 859796771}
+  - {fileID: 1707191386}
+  - {fileID: 919839604}
   cAlive: 01010101
   cLives: 03000000030000000300000003000000
   cLivesText:
@@ -7903,6 +7934,7 @@ MonoBehaviour:
   cardName: Hou Yi
   habilidadeEspecial: Nenhum
   life: 0
+  currentLife: 0
   damage: 0
   apr: 1
   index: 0
@@ -10050,6 +10082,7 @@ MonoBehaviour:
   cardName: "C\xE3o"
   habilidadeEspecial: Nenhum
   life: 150
+  currentLife: 0
   damage: 200
   apr: 1
   index: 0
@@ -10370,6 +10403,7 @@ MonoBehaviour:
   cardName: "Drag\xE3o"
   habilidadeEspecial: Nenhum
   life: 300
+  currentLife: 0
   damage: 150
   apr: 1
   index: 0
@@ -11272,6 +11306,7 @@ MonoBehaviour:
   cardName: Zhong Kui
   habilidadeEspecial: Nenhum
   life: 0
+  currentLife: 0
   damage: 0
   apr: 1
   index: 0
@@ -12700,6 +12735,7 @@ MonoBehaviour:
   cardName: Nezha
   habilidadeEspecial: Nenhum
   life: 0
+  currentLife: 0
   damage: 0
   apr: 1
   index: 0
@@ -14173,6 +14209,7 @@ MonoBehaviour:
   cardName: Sun Wukong
   habilidadeEspecial: Nenhum
   life: 0
+  currentLife: 0
   damage: 0
   apr: 1
   index: 0
@@ -15054,6 +15091,7 @@ MonoBehaviour:
   cardName: Imperador de Jade
   habilidadeEspecial: Nenhum
   life: 0
+  currentLife: 0
   damage: 0
   apr: 1
   index: 0
@@ -16356,6 +16394,7 @@ MonoBehaviour:
   cardName: Cobra
   habilidadeEspecial: Nenhum
   life: 150
+  currentLife: 0
   damage: 200
   apr: 1
   index: 0
@@ -17036,6 +17075,7 @@ MonoBehaviour:
   cardName: Cabra
   habilidadeEspecial: Nenhum
   life: 100
+  currentLife: 0
   damage: 100
   apr: 1
   index: 0
@@ -17626,6 +17666,7 @@ MonoBehaviour:
   cardName: Macaco
   habilidadeEspecial: Nenhum
   life: 300
+  currentLife: 0
   damage: 150
   apr: 1
   index: 0
@@ -17946,6 +17987,7 @@ MonoBehaviour:
   cardName: Imperador Amarelo
   habilidadeEspecial: Nenhum
   life: 0
+  currentLife: 0
   damage: 0
   apr: 1
   index: 0
@@ -18329,6 +18371,7 @@ MonoBehaviour:
   cardName: Javali
   habilidadeEspecial: Nenhum
   life: 150
+  currentLife: 0
   damage: 200
   apr: 1
   index: 0
@@ -19000,6 +19043,7 @@ MonoBehaviour:
   cardName: Nu Wa
   habilidadeEspecial: Nenhum
   life: 0
+  currentLife: 0
   damage: 0
   apr: 1
   index: 0
@@ -19237,6 +19281,7 @@ MonoBehaviour:
   cardName: Tigre
   habilidadeEspecial: Nenhum
   life: 150
+  currentLife: 0
   damage: 200
   apr: 1
   index: 0
@@ -19549,6 +19594,7 @@ MonoBehaviour:
   cardName: Erlang Shen
   habilidadeEspecial: Nenhum
   life: 0
+  currentLife: 0
   damage: 0
   apr: 1
   index: 0

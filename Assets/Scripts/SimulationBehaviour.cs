@@ -26,7 +26,7 @@ public class SimulationBehaviour : MonoBehaviour
     public CardAttributes campoODefPos; // Posição de defesa no campo Oeste
 
     // Verificações de cartas invocadas
-    public Transform[] cPos; // 0,1 = N, 2,3 = L, 4,5 = S, 6,7 = O
+    public TextMeshProUGUI[] cPosLivesText; // 0,1 = N, 2,3 = L, 4,5 = S, 6,7 = O
     public bool[] cAlive; // 0 = N, 1 = L, 2 = S, 3 = O
     public int[] cLives; // 0 = N, 1 = L, 2 = S, 3 = O
     public TextMeshProUGUI[] cLivesText; // 0 = N, 1 = L, 2 = S, 3 = O
@@ -256,14 +256,17 @@ public class SimulationBehaviour : MonoBehaviour
             case 0:
                 if(campoNAtkPos || campoNDefPos)
                 {
-                    if(campoNAtkPos){dano = dano - campoNAtkPos.getLife();} 
+                    if(campoNAtkPos){campoNAtkPos.setCurrentLife(campoNAtkPos.getCurrentLife() - dano); dano = dano - campoNAtkPos.getLife(); 
+                        if (dano < 0) {dano = 0;} else {campoNAtkPos.setCurrentLife(0);}
+                        cPosLivesText[0].text = campoNAtkPos.getCurrentLife().ToString();
+                    } 
                     
-                    if (dano < 0) {dano = 0;}
+                    if(campoNDefPos){campoNDefPos.setCurrentLife(campoNDefPos.getCurrentLife() - dano); dano = dano - campoNDefPos.getLife();
+                        if (dano < 0) {dano = 0; Counter(0,turn);} else {campoNDefPos.setCurrentLife(0);}
+                        cPosLivesText[1].text = campoNDefPos.getCurrentLife().ToString();
+                    } 
                     
-                    if(campoNDefPos){dano = dano - campoNDefPos.getLife();} 
-                    
-                    if (dano < 0) {dano = 0; Counter(0,turn);}
-                    else {cLives[0]--; cLivesText[0].text = cLives[0].ToString();}
+                    if(dano > 0) {cLives[0]--; cLivesText[0].text = cLives[0].ToString();}
                 }
                 else 
                 {
@@ -274,7 +277,17 @@ public class SimulationBehaviour : MonoBehaviour
             case 1:
                 if(campoLAtkPos || campoLDefPos)
                 {
+                    if(campoLAtkPos){campoLAtkPos.setCurrentLife(campoLAtkPos.getCurrentLife() - dano); dano = dano - campoLAtkPos.getLife(); 
+                        if (dano < 0) {dano = 0;} else {campoLAtkPos.setCurrentLife(0);}
+                        cPosLivesText[2].text = campoLAtkPos.getCurrentLife().ToString();
+                    } 
+                    
+                    if(campoLDefPos){campoLDefPos.setCurrentLife(campoLDefPos.getCurrentLife() - dano); dano = dano - campoLDefPos.getLife();
+                        if (dano < 0) {dano = 0; Counter(1,turn);} else {campoLDefPos.setCurrentLife(0);}
+                        cPosLivesText[3].text = campoLDefPos.getCurrentLife().ToString();
+                    } 
 
+                    if (dano > 0){cLives[1]--; cLivesText[1].text = cLives[1].ToString();}
                 }
                 else 
                 {
@@ -285,7 +298,17 @@ public class SimulationBehaviour : MonoBehaviour
             case 2:
                 if(campoSAtkPos || campoSDefPos)
                 {
-
+                    if(campoSAtkPos){campoSAtkPos.setCurrentLife(campoSAtkPos.getCurrentLife() - dano); dano = dano - campoSAtkPos.getLife(); 
+                        if (dano < 0) {dano = 0;} else {campoSAtkPos.setCurrentLife(0);}
+                        cPosLivesText[4].text = campoSAtkPos.getCurrentLife().ToString();
+                    } 
+                    
+                    if(campoSDefPos){campoSDefPos.setCurrentLife(campoSDefPos.getCurrentLife() - dano); dano = dano - campoSDefPos.getLife();
+                        if (dano < 0) {dano = 0; Counter(2,turn);} else {campoSDefPos.setCurrentLife(0);}
+                        cPosLivesText[5].text = campoSDefPos.getCurrentLife().ToString();
+                    } 
+                    
+                    if (dano > 0){cLives[2]--; cLivesText[2].text = cLives[2].ToString();}
                 }
                 else 
                 {
@@ -296,7 +319,17 @@ public class SimulationBehaviour : MonoBehaviour
             case 3:
                 if(campoOAtkPos || campoODefPos)
                 {
+                    if(campoOAtkPos){campoOAtkPos.setCurrentLife(campoOAtkPos.getCurrentLife() - dano); dano = dano - campoOAtkPos.getLife(); 
+                        if (dano < 0) {dano = 0;} else {campoOAtkPos.setCurrentLife(0);}
+                        cPosLivesText[6].text = campoOAtkPos.getCurrentLife().ToString();
+                    } 
+                    
+                    if(campoODefPos){campoODefPos.setCurrentLife(campoODefPos.getCurrentLife() - dano); dano = dano - campoODefPos.getLife();
+                        if (dano < 0) {dano = 0; Counter(3,turn);} else {campoODefPos.setCurrentLife(0);}
+                        cPosLivesText[7].text = campoODefPos.getCurrentLife().ToString();
+                    } 
 
+                    if (dano > 0){cLives[3]--; cLivesText[3].text = cLives[3].ToString();}
                 }
                 else 
                 {
@@ -314,7 +347,84 @@ public class SimulationBehaviour : MonoBehaviour
 
     public void Counter(int countera, int counterado)
     {
+        int dano = 0;
+        switch(countera)
+        {
+            case 0:
+                if(campoNDefPos){dano = campoNDefPos.getDamage();} 
+                break;
+            case 1:
+                if(campoLDefPos){dano = campoLDefPos.getDamage();} 
+                break;
+            case 2:
+                if(campoSDefPos){dano = campoSDefPos.getDamage();} 
+                break;
+            case 3:
+                if(campoODefPos){dano = campoODefPos.getDamage();} 
+                break;
+            default:
+                break;
+        }
 
+        switch(counterado)
+        {
+            case 0:
+                if(campoNAtkPos){campoNAtkPos.setCurrentLife(campoNAtkPos.getCurrentLife() - dano); dano = dano - campoNAtkPos.getLife(); 
+                    if (dano < 0) {dano = 0;} else {campoNAtkPos.setCurrentLife(0);}
+                    cPosLivesText[0].text = campoNAtkPos.getCurrentLife().ToString();
+                } 
+                
+                if(campoNDefPos){campoNDefPos.setCurrentLife(campoNDefPos.getCurrentLife() - dano); dano = dano - campoNDefPos.getLife();
+                    if (dano < 0) {dano = 0; Counter(0,turn);} else {campoNDefPos.setCurrentLife(0);}
+                    cPosLivesText[1].text = campoNDefPos.getCurrentLife().ToString();
+                } 
+                
+                if(dano > 0) {cLives[0]--; cLivesText[0].text = cLives[0].ToString();}
+                break;
+            case 1:
+                if(campoLAtkPos){campoLAtkPos.setCurrentLife(campoLAtkPos.getCurrentLife() - dano); dano = dano - campoLAtkPos.getLife(); 
+                    if (dano < 0) {dano = 0;} else {campoLAtkPos.setCurrentLife(0);}
+                    cPosLivesText[2].text = campoLAtkPos.getCurrentLife().ToString();
+                } 
+                
+                if(campoLDefPos){campoLDefPos.setCurrentLife(campoLDefPos.getCurrentLife() - dano); dano = dano - campoLDefPos.getLife();
+                    if (dano < 0) {dano = 0; Counter(1,turn);} else {campoLDefPos.setCurrentLife(0);}
+                    cPosLivesText[3].text = campoLDefPos.getCurrentLife().ToString();
+                } 
+
+                if (dano > 0){cLives[1]--; cLivesText[1].text = cLives[1].ToString();}
+                break;
+            case 2:
+                if(campoSAtkPos){campoSAtkPos.setCurrentLife(campoSAtkPos.getCurrentLife() - dano); dano = dano - campoSAtkPos.getLife(); 
+                    if (dano < 0) {dano = 0;} else {campoSAtkPos.setCurrentLife(0);}
+                    cPosLivesText[4].text = campoSAtkPos.getCurrentLife().ToString();
+                } 
+                
+                if(campoSDefPos){campoSDefPos.setCurrentLife(campoSDefPos.getCurrentLife() - dano); dano = dano - campoSDefPos.getLife();
+                    if (dano < 0) {dano = 0; Counter(2,turn);} else {campoSDefPos.setCurrentLife(0);}
+                    cPosLivesText[5].text = campoSDefPos.getCurrentLife().ToString();
+                } 
+                
+                if (dano > 0){cLives[2]--; cLivesText[2].text = cLives[2].ToString();}
+                break;
+            case 3:
+                if(campoOAtkPos){campoOAtkPos.setCurrentLife(campoOAtkPos.getCurrentLife() - dano); dano = dano - campoOAtkPos.getLife(); 
+                    if (dano < 0) {dano = 0;} else {campoOAtkPos.setCurrentLife(0);}
+                    cPosLivesText[6].text = campoOAtkPos.getCurrentLife().ToString();
+                } 
+                
+                if(campoODefPos){campoODefPos.setCurrentLife(campoODefPos.getCurrentLife() - dano); dano = dano - campoODefPos.getLife();
+                    if (dano < 0) {dano = 0; Counter(3,turn);} else {campoODefPos.setCurrentLife(0);}
+                    cPosLivesText[7].text = campoODefPos.getCurrentLife().ToString();
+                } 
+
+                if (dano > 0){cLives[3]--; cLivesText[3].text = cLives[3].ToString();}
+                break;
+            default:
+                break;
+        }
+                
+                    
     }
 
     public void ShuffleTurn()

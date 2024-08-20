@@ -49,6 +49,7 @@ public class DetectCards : MonoBehaviour
                 {GameObject.FindWithTag("Simulation").GetComponent<SimulationBehaviour>().campoODefPos = invocado;}
                 break;
         }
+        other.gameObject.GetComponent<CardAttributes>().resetCurrentLife();
     }
 
     void OnTriggerExit(Collider other)
